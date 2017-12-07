@@ -1,0 +1,31 @@
+<div class="container">
+
+      <form class="form-signin" #form="ngForm" (ngSubmit)= "onSubmit(form)">
+        
+        <h2 class="form-signin-heading">Please log in</h2>
+        
+        <label for="username" class="sr-only">User Name</label>
+        <input type="text" id="username" class="form-control" placeholder="User Name" required autofocus
+         name="username" ngModel #username="ngModel" >
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required
+         name="password" ngModel #password="ngModel">
+
+        <button class="btn btn-primary" type="submit">Log in</button>
+
+      </form>
+
+      <app-dialog [(visible)]="showDialog">
+        <h4>Login Result</h4>
+        <hr>
+
+        <p style="text-align: center;" [hidden]="successMessage">Login Success!</p>
+        <p style="text-align: center;" [hidden]="failureMessage">Login Failure!</p>        
+        <p style="text-align: center;" [hidden]="serverNotFoundMessage">Server Not Found!</p>
+
+        <br>
+        <button (click)="showDialog = !showDialog" class="btn">OK</button>
+      </app-dialog>
+
+</div>

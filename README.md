@@ -60,7 +60,7 @@ This project is a program that shows the combination of angularjs, nodejs, and m
     ```
     
  ### MySQL Database
-    ```ruby
+  ```ruby
     Database: `users`
 
     CREATE TABLE `user_info` (
@@ -70,6 +70,6 @@ This project is a program that shows the combination of angularjs, nodejs, and m
     ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
     INSERT INTO `user_info` (`id`, `user_name`, `user_pwd`) VALUES (1, 'test', '123456');
-    ```
+  ```
     
 

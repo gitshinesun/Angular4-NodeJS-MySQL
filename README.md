@@ -9,7 +9,7 @@ This project is a program that shows the combination of angularjs, nodejs, and m
   
 ### FrontEnd Side
   - You can change server address in src/app/auth.service.ts.
-    ```
+    ```ruby
     private loginUrl = 'http://127.0.0.1:4100/login';
     ```
   - If you want to send non-json formatted data to a server, you need to set the header options correctly and encode the body like this:
@@ -60,8 +60,8 @@ This project is a program that shows the combination of angularjs, nodejs, and m
     ```
     
  ### MySQL Database
-   ```
-   Database: `users`
+    ```ruby
+    Database: `users`
 
     CREATE TABLE `user_info` (
       `id` int(11) NOT NULL,
